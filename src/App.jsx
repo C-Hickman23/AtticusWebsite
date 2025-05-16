@@ -134,51 +134,13 @@ function App() {
       <header>
         <img src={logo} className="logo" alt="logo" />
         <nav>
-          <a href="#about-me">About Me</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact-info">Contact Me</a>
         </nav>
       </header>
 
       <div class="hero"></div>
 
       <main>
-        <section id="about-me">
-          <h2>About Me</h2>
-          <div class="row">
-            <img src={portrait}></img>
-            <p>My name is Cardon James Hickman, born in 2004 I am currently 20 years old. 
-              Growing up, I had three siblings, and I was always handy with technology.
-              In middle school, I got into programming and robotics, and I also joined the band program, which I continued until high school.
-              During high school, I completed AP Physics 1 & 2, AP Computer Science A, and earned my FAA Remote Pilot License.
-              <br></br><br></br>
-              After graduating high school in 2023, I decided to complete a full-stack web development bootcamp and am currently enrolled at Salt Lake Community College.
-              I have taken professional courses in programming, but my ultimate goal is to earn a degree in Mechanical Engineering to enter the field of robotics.
-              I have experience in programming languages and technologies including Java, C++, JavaScript, HTML, CSS, JSX, SQL, MERN stack, MongoDB, and more.
-              </p>
-          </div>
-        </section>
-
-        <section id="projects">
-          <h2>Projects</h2>
-          <div className="slider-container">
-            <button class="slider-button" onClick={() => sliderRef.slickPrev()}>
-              <img src={arrow}></img>
-            </button>
-            <Slider ref={slider => {sliderRef = slider;}} {...projectSliderSettings}>
-              {updateProjects()}
-            </Slider>
-            <button class="slider-button" onClick={() => sliderRef.slickNext()}>
-              <img src={arrow} class="flip"></img>
-            </button>
-          </div>
-        </section>
-
-        <section id="contact-info">
-          <h2>Contact Me</h2>
-          <button size="lg" onClick={() => window.open("https://github.com/C-Hickman23", "_blank")}>Github</button>
-          <button onClick={() => window.open("https://www.linkedin.com/in/cardon-hickman-b7491727a/", "_blank")}>LinkedIn</button>
-        </section>
+        <p>Nothing uploaded just yet</p>
       </main>
     </div>
   );
